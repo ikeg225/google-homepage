@@ -38,14 +38,12 @@ button:hover {
     box-shadow: 0 1px 5px rgba(0,0,0,0.19);
 }
 #search-bar {
-    width: 200%;
-    border-radius: 20px;
     height: 40px;
-    border: 1px solid #dfe1e5;
     padding: 0px 20px;
-    margin-top: 20px;
+    width: 90%;
+    border: none;
 }
-#search-bar:hover {
+.search:hover {
     box-shadow: 0 1px 5px rgba(0,0,0,0.19);
 }
 #search-bar:focus {
@@ -126,7 +124,20 @@ footer a {
 #profile:hover {
     box-shadow: 0 0px 0px 5px #e6e6e6;
 }
-
+.search {
+    display: flex;
+    align-items: center;
+    border: 1px solid #dfe1e5;
+    border-radius: 20px;
+    width: 200%;
+    padding-left: 10px;
+    padding-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.search a {
+    height: 24px;
+}
 
 @media (max-width: 1200px) {
     footer {
@@ -147,7 +158,6 @@ footer a {
     }
     #bottom-left ul {
         padding-right: 0;
-        
     }
     #bottom-right {
         grid-area: right;
@@ -161,7 +171,7 @@ footer a {
         grid-template-areas:
             "top"
             "middle"
-            "bottom"
+            "bottom";
     }
     #bottom-left {
         grid-area: middle;
@@ -172,18 +182,18 @@ footer a {
     }
     #bottom-right {
         grid-area: bottom;
-        text-align: center
+        text-align: center;
     }
     #bottom-middle {
         grid-area: top;
     }
-    #search-bar {
+    .search {
         width: 140%;
     }
 }
 
 @media (max-width: 482px) {
-    #search-bar {
+    .search {
         width: 100%;
     }
 }
