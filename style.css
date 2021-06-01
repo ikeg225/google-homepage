@@ -12,6 +12,9 @@ body {
 .sub {
     position: absolute;
     top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #logo {
     width: 272px;
@@ -37,9 +40,10 @@ button:hover {
 #search-bar {
     width: 200%;
     border-radius: 20px;
-    height: 30px;
+    height: 40px;
     border: 1px solid #dfe1e5;
     padding: 0px 20px;
+    margin-top: 20px;
 }
 #search-bar:hover {
     box-shadow: 0 1px 5px rgba(0,0,0,0.19);
@@ -122,6 +126,8 @@ footer a {
 #profile:hover {
     box-shadow: 0 0px 0px 5px #e6e6e6;
 }
+
+
 @media (max-width: 1200px) {
     footer {
         grid-template-columns: 1fr 1fr;
@@ -161,11 +167,23 @@ footer a {
         grid-area: middle;
         text-align: center;
     }
+    #bottom-left ul{
+        padding-right: 20px;
+    }
     #bottom-right {
         grid-area: bottom;
         text-align: center
     }
     #bottom-middle {
         grid-area: top;
+    }
+    #search-bar {
+        width: 140%;
+    }
+}
+
+@media (max-width: 482px) {
+    #search-bar {
+        width: 100%;
     }
 }
