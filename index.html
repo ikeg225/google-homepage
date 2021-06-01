@@ -3,7 +3,12 @@
     <head>
         <title>Google</title>
         <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
         <style>
+            body {
+                font-size: 14px;
+                font-family: Roboto;
+            }
             .main {
                 display: flex;
                 flex-direction: column;
@@ -43,9 +48,51 @@
             #search-bar:focus {
                 outline: none;
             }
+            header {
+                display: flex;
+            }
+            #left {
+                width: 50%;
+            }
+            #right {
+                width: 50%;
+                text-align: right;
+                font-size: 13px;
+                font-family: arial;
+            }
+            nav ul {
+                margin: 0;
+                padding: 10px;
+                list-style-type: none;
+            }
+            nav li {
+                display: inline-block;
+                margin: 0 10px;
+            }
+            li a {
+                color: #222;
+                text-decoration: none;
+            }
+            li a:hover {
+                text-decoration: underline;
+            }
         </style>
     </head>
     <body>
+        <header>
+            <nav id="left">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Store</a></li>
+                </ul>
+            </nav>
+            <nav id="right">
+                <ul>
+                    <li><a href="#">Gmail</a></li>
+                    <li><a href="#">Images</a></li>
+                </ul>
+            </nav>
+        </header>
         <div class="main">
             <a href="https://www.google.com/search?q=Memorial%20Day"><img id="logo" src="https://www.google.com/logos/doodles/2021/memorial-day-2021-united-states-6753651837109273.2-l.png" alt="Memorial Day 2021"></a>
             <div class="sub-section">
