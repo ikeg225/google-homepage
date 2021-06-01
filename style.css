@@ -14,8 +14,8 @@ body {
     top: 20%;
 }
 #logo {
-    width: 375px;
-    height: 150px;
+    width: 272px;
+    height: 92px;
 }
 .sub-section {
     display: flex;
@@ -121,4 +121,51 @@ footer a {
 }
 #profile:hover {
     box-shadow: 0 0px 0px 5px #e6e6e6;
+}
+@media (max-width: 1200px) {
+    footer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "top top"
+            "left right";
+    }
+    footer a {
+        margin: 0;
+    }
+    #bottom-middle {
+        grid-area: top;
+    }
+    #bottom-left {
+        grid-area: left;
+    }
+    #bottom-left ul {
+        padding-right: 0;
+        
+    }
+    #bottom-right {
+        grid-area: right;
+    }
+}
+
+@media (max-width: 664px) {
+    footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "top"
+            "middle"
+            "bottom"
+    }
+    #bottom-left {
+        grid-area: middle;
+        text-align: center;
+    }
+    #bottom-right {
+        grid-area: bottom;
+        text-align: center
+    }
+    #bottom-middle {
+        grid-area: top;
+    }
 }
