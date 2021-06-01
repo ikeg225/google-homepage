@@ -8,8 +8,10 @@
             body {
                 font-size: 14px;
                 font-family: Roboto;
+                margin: 0;
+                padding: 0;
             }
-            .main {
+            .sub {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -62,18 +64,44 @@
             }
             nav ul {
                 margin: 0;
-                padding: 10px;
+                padding: 20px;
                 list-style-type: none;
             }
             nav li {
                 display: inline-block;
                 margin: 0 10px;
             }
-            li a {
+            header a {
                 color: #222;
                 text-decoration: none;
             }
             li a:hover {
+                text-decoration: underline;
+            }
+            footer {
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                background-color: #f2f2f2;
+                display: grid;
+                grid-template-columns: repeat(3, 33%);
+            }
+            footer a {
+                color: #70757a;
+                text-decoration: none;
+            }
+            #bottom-left {
+
+            }
+            #bottom-middle {
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+            }
+            #bottom-right {
+                text-align: right;
+            }
+            #carbon:hover {
                 text-decoration: underline;
             }
         </style>
@@ -94,15 +122,39 @@
             </nav>
         </header>
         <div class="main">
-            <a href="https://www.google.com/search?q=Memorial%20Day"><img id="logo" src="https://www.google.com/logos/doodles/2021/memorial-day-2021-united-states-6753651837109273.2-l.png" alt="Memorial Day 2021"></a>
-            <div class="sub-section">
-                <input type="text" id="search-bar">
-                <div class="buttons">
-                    <button>Google Search</button>
-                    <button>I'm Feeling Lucky</button>
+            <div class="sub">
+                <a href="https://www.google.com/search?q=Memorial%20Day"><img id="logo" src="https://www.google.com/logos/doodles/2021/memorial-day-2021-united-states-6753651837109273.2-l.png" alt="Memorial Day 2021"></a>
+                <div class="sub-section">
+                    <input type="text" id="search-bar">
+                    <div class="buttons">
+                        <button>Google Search</button>
+                        <button>I'm Feeling Lucky</button>
+                    </div>
+                    <a href="https://www.google.com/search?q=Memorial%20Day"><img id="flag" src="https://www.google.com/images/hpp/us-flag.png" alt="Memorial Day 2021" width="68" height="60"></a>
                 </div>
-                <a href="https://www.google.com/search?q=Memorial%20Day"><img id="flag" src="https://www.google.com/images/hpp/us-flag.png" alt="Memorial Day 2021" width="68" height="60"></a>
             </div>
         </div>
+        <footer>
+            <nav id="bottom-left">
+                <ul>
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">How Search Works</a></li>
+                </ul>
+            </nav>
+            <div id="bottom-middle">
+                <a href="#">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC" alt="leaf" height="14" width="12.25">
+                    <span id="carbon">Carbon neutral since 2007</span>
+                </a>
+            </div>
+            <nav id="bottom-right">
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </nav>
+        </footer>
     </body>
 </html>
