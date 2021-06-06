@@ -1,12 +1,6 @@
 document.getElementById('search-bar').addEventListener('keyup', function(event) {
         if (event.code === 'Enter')
         {
-            searchValue()
+            window.location.href = "https://google.com/search?q=" + document.getElementById("search-bar").value;
         }
     });
-
-
-function searchValue() {
-    const y = document.getElementById("search-bar").value;
-    window.location.href = "https://google.com/search?q=" + y;
-};

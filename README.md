@@ -6,6 +6,8 @@ Today's date is 5/31/2021. Working on the Google Homepage Project through The Od
 
 6/3/2021: Added a javascript function that works with the input field to search up the user inquiry on google. Only is called when a user presses the enter key.
 
+6/6/2021: Compacted JS code.
+
 Skills Worked On:
 - Git and Github
 - What every HTML doc needs (title, meta charset, meta viewport, header tags, body tags)
